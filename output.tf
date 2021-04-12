@@ -26,6 +26,11 @@ output "client_secret" {
   value       =  data.vault_azure_access_credentials.creds.client_secret
 }
 
+output "lease_id" {
+  description = "Azure lease ID"
+  value       =  data.vault_azure_access_credentials.creds.lease_id
+}
+
 output "lease_duration" {
   description = "Azure lease duration"
   value       =  data.vault_azure_access_credentials.creds.lease_duration
