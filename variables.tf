@@ -5,6 +5,7 @@ variable "connection_info" {
                          vault_backend   = string
                          vault_role      = string
                          vault_token     = string })
+  sensitive   = true
 }
 
 variable "validate_creds" {
